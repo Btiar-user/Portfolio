@@ -127,10 +127,17 @@ document.head.appendChild(style);
 // DOWNLOAD CV
 //================
 
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadBtn = document.querySelector('.btn-cv');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', downloadCV);
+    }
+});
+
 function downloadCV() {
     // Replace with the actual path to your CV file
-    const cvPath = 'assets/documents/my-cv.pdf';
-    const fileName = 'My-Curriculum-Vitae.pdf'; // Name you want for downloaded file
+    const cvPath = 'Images/Brian Nyakundi CV.pdf';
+    const fileName = 'Brian Nyakundi CV.pdf'; // Name you want for downloaded file
     
     // Create a temporary link to trigger download
     const link = document.createElement('a');
