@@ -68,6 +68,10 @@ mobileLinks.forEach(link => {
     });
 });
 
+function downloadCV() {
+    window.location.href = 'assets/CV.pdf'; // use your real CV path
+};
+
 // after creating mobileMenu
 const cvButton = mobileMenu.querySelector('.btn.btn-primary');
 cvButton.addEventListener('click', () => {
