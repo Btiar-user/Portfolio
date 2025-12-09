@@ -68,6 +68,12 @@ mobileLinks.forEach(link => {
     });
 });
 
+// after creating mobileMenu
+const cvButton = mobileMenu.querySelector('.btn.btn-primary');
+cvButton.addEventListener('click', () => {
+    window.location.href = 'https://briannyakundi.github.io/Brian/images/Brian Nyakundi CV.pdf'; // put your real CV path here
+});
+
 // ===========================
 // SMOOTH SCROLLING
 // ===========================
